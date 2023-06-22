@@ -1,0 +1,35 @@
+
+var text='Assalom aleykum Xurshid aka';
+
+
+String fofo(text,num1,num2){
+    var  res='';
+    if(num1<0){
+       var lp=num1+text.length;
+       var lt=num2+text.length;
+       for(var i=0; i<text.length;i++){
+           if( i>=lp && i<=lt){
+               res+=text[i];
+           }
+           else{
+               continue;
+           }
+       }
+       
+           
+    }
+    else{
+       for(var i=0; i<text.length;i++){
+           if(i>=num1 && i<num2){
+              res+=text[i];
+           }
+       }
+    }
+    return res;
+}
+
+
+void main(){
+     print(fofo(text,-5,0));    
+}
+//slicer function
